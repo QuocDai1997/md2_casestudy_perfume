@@ -164,7 +164,7 @@ public class AccountView {
 
         do {
             if (!Validation.isUsernameValid(username = Retry.retryString("Username"))) {
-                System.out.println(username + "is not valid! Please try again!");
+                System.out.println(username + " is not valid! Please try again!");
                 System.out.print("==> ");
                 continue;
             }

@@ -116,5 +116,5 @@ public class Account {
                 accId, accUsername, accPassword, accName, accPhoneNumber, accEmail, accAddress, accRole, accCreatedTime, accUpdatedTime);
     }
 
-    List<Order> orderList = new ArrayList<>();
+
 }

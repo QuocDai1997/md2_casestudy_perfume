@@ -35,7 +35,7 @@ public class ProductService implements IProductService{
     @Override
     public void add(Product newProduct) {
         List<Product> productList = findAll();
-        newProduct.setProUpdatedTime(Instant.now());
+        newProduct.setProCreatedTime(Instant.now());
         productList.add(newProduct);
         FileFormat.write(path, productList);
     }

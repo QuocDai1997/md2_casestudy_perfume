@@ -1,5 +1,11 @@
 package view;
 
+import model.Account;
+import model.Role;
+import service.AccountService;
+import service.IAccountService;
+import tool.Retry;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -9,7 +15,6 @@ public class MainLauncher {
         adminView.adminLogin();
         menuOption();
     }
-
     public static void menuOption() {
         do {
             mainMenu();
@@ -24,9 +29,6 @@ public class MainLauncher {
                         break;
                     case 2:
                         ProductViewLauncher.run();
-                        break;
-                    case 3:
-                        OrderViewLauncher.run();
                         break;
                     default:
                         System.out.println("Wrong option! Please select one of above options!");
@@ -45,8 +47,8 @@ public class MainLauncher {
         System.out.println("\t ||                                               ||");
         System.out.println("\t ||             1. ACCOUNT MANAGER                ||");
         System.out.println("\t ||             2. PRODUCT MANAGER                ||");
-        System.out.println("\t ||             3. ORDER MANAGER                  ||");
         System.out.println("\t ||                                               ||");
         System.out.println("\t ===================================================");
     }
+
 }

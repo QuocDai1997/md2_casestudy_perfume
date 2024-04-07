@@ -35,6 +35,7 @@ public class ProductViewLauncher {
                         break;
                     case 6:
                         productView.sortByPriceOrderByDES();
+                        break;
                     case 7:
                         Retry.exit();
                         break;

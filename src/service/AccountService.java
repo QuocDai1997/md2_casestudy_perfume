@@ -37,7 +37,7 @@ public class AccountService implements IAccountService{
         List<Account> accountList = findAll();
         for (Account account : accountList) {
             if (account.getAccUsername().equals(username) && account.getAccPassword().equals(password)
-                    && account.getAccRole().equals(Role.ADMIN)) {
+            && account.getAccRole().equals(Role.ADMIN)) {
                 return account;
             }
         }

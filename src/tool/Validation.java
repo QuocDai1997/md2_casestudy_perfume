@@ -7,8 +7,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.regex.Pattern;
 
 public class Validation {
-    public static final String USERNAME_REGEX = "^[\\w\\d.-_]{8,26}$";
-    public static final String PASSWORD_REGEX = "^[\\w\\d]{8,26}$";
+    public static final String USERNAME_REGEX = "^[\\w\\d.-_]{6,26}$";
+    public static final String PASSWORD_REGEX = "^[\\w\\d]{6,26}$";
     public static final String NAME_REGEX = "^[\\w ]*$";
     public static final String PHONENUMBER_REGEX = "^((0?)||84)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$";
     public static final String EMAIL_REGEX = "^([\\w\\d._]*)+(@[\\w]{3,})+(.[\\w]{2,3})$";
